@@ -22,11 +22,11 @@ int main()
 
 
 	DoubleLink<int>::pointer ptr = dlink.getHead();
-	ptr = ptr->next_ptr;
+	ptr = ptr->next;
 	while (ptr != dlink.getHead())
 	{
-		cout << ptr->_value << endl;
-		ptr = ptr->next_ptr;
+		cout << ptr->value<< endl;
+		ptr = ptr->next;
 	}
 
 	getchar();

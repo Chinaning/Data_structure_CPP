@@ -1,31 +1,29 @@
-# ifndef _DOUBLELINK_CIRCLE_H
-# define _DOUBLELINK_CIRCLE_H
+/* content: 循环双向链表*/
 
-/*
-双向链表的节点结构
-*/
+# ifndef _DOUBLELINK_H
+# define _DOUBLELINK_H
+
+/*双向链表的结点定义*/
 template <typename T>
 class Node
 {
 public:
-	Node() = default;
-	Node(T value, Node<T>* preptr, Node<T>* nextptr)
-		:_value(value), pre_ptr(preptr), next_ptr(nextptr) {}
+	Node() = default;//如果定义含参构造函数则系统不会为对象生成默认构造函数。如果后面可能需要用到对象的默认构造函数，则需要将默认构造函数default来声明一下。
+	Node(T _value, Node<T>* _prev, Node<T>* _next)
+		:value(_value), prev(_prev), next(_next) {}//通过含参构造函进行初始化对象
 
 public:
-	T _value;
-	Node<T>* pre_ptr;
-	Node<T>* next_ptr;
+	T value;//数据域
+	Node<T>* prev;//前驱指针域
+	Node<T>* next;//后继指针域
 };
 
-/*
-* 双向链表类
-*/
+/*双向链表类*/
 template<typename T>
 class DoubleLink
 {
 public:
-	typedef Node<T>* pointer;
+	typedef Node<T>* pointer;//对Node<T>*进行类型重定义，可以用pointer来什么定义Node<T>* 类型的对象 
 public:
 	DoubleLink();
 	~DoubleLink() {};
@@ -47,114 +45,105 @@ public:
 	Node<T>* getHead();
 
 private:
-	Node<T>* phead;
+	Node<T>* head;
 	int count;
 private:
 	Node<T>* getNode(int index);
 };
-/*
-* 构造函数
-*
-*/
+
+/* 构造函数（创建只含有头结点的空表）*/
 template <typename T>
 DoubleLink<T>::DoubleLink()
 {
-	phead = new Node<T>(0, nullptr, nullptr);
-	phead->next_ptr = phead;
-	phead->pre_ptr = phead;
-	count = 0;
+	head = new Node<T>(0, nullptr, nullptr);//为头结点phead开辟内存空间并给对象数据成员直接赋初始值（实际通过含参构造函数给对象的数据成员进行赋值）
+	head->next = head;//空表头结点前驱和后继均是自己
+	head->prev = head;
+	count = 0;//结点数为零
 };
+
+/*获取头结点*/
 template<typename T>
 Node<T>* DoubleLink<T>::getHead()
 {
-	return phead;
+	return head;
 }
 
-/*
-*返回链表长度
-*/
+/*返回链表长度*/
 template <typename T>
 int DoubleLink<T>::size()
 {
 	return count;
 }
-/*
-获取指定下标的元素
-*/
+
+/*查找结点（指定下标）*/
 template <typename T>
 Node<T>* DoubleLink<T>::getNode(int index)
 {
 	if (index >= count || index < 0)
 		return nullptr;
 
-	if (index <= count / 2) //如果在前半部分
+	if (index <= count / 2) //如果在前半部分就从头结点往后找快速
 	{
-		Node<T>* pnode = phead->next_ptr;
+		Node<T>* node = head->next;
 		while (index)
 		{
-			pnode = pnode->next_ptr;
+			node = node->next;
 			index--;
 		}
-		return pnode;
-	}						//在后半部分
+		return node;
+	}			//在后半部分就从头结点往前找快速
 
 	index = count - index - 1;
-	Node<T>* pnode = phead->pre_ptr;
+	Node<T>* node = head->prev;
 	while (index)
 	{
-		pnode = pnode->pre_ptr;
+		node = node->prev;
 		index--;
 	}
-	return pnode;
+	return node;//返回指定下标的结点
 };
-/*
-*将新节点插到第一个位置
-*/
+
+/*将新节点插到第一个位置*/
 template <typename T>
 Node<T>* DoubleLink<T>::insert_front(T value)
 {
-	Node<T>* newNode = new Node<int>(value, phead, phead->next_ptr);
-	phead->next_ptr->pre_ptr = newNode;
-	phead->next_ptr = newNode;
-	count++;
+	Node<T>* newNode = new Node<int>(value, head, head->next);//新建一个结点，前驱指针指向头结点，后继指针指向头结点的后继节点
+	head->next->prev = newNode;
+	head->next = newNode;//指针调整顺序不可调换，因为若先执行phead->next_ptr = newNode建立起phead和newNode之间的连接,则phead->next_ptr ->pre_ptr即为newNode->pre_ptr=phead仍然表达的是phead和newNode之间的连接，并没有在newNode和原phead->next_ptr之间建立连接。
+	count++;//结点数增加一个
 	return newNode;
 };
-/*
-*将新节点插到链表尾部
-*/
+
+/*将新节点插到链表尾部*/
 template <typename T>
 Node<T>* DoubleLink<T>::insert_last(T value)
 {
-	Node<T> * newNode = new Node<int>(value, phead->pre_ptr, phead);
-	phead->pre_ptr->next_ptr = newNode;
-	phead->pre_ptr = newNode;
+	Node<T> * newNode = new Node<int>(value, head->prev, head);
+	head->prev->next = newNode;
+	head->prev = newNode;//顺序不可换，理由同上
 	count++;
 	return newNode;
 };
-/*
-*将节点位置插到index位置之前
-*/
 
+/*将节点位置插到index位置之前*/
 template <typename T>
 Node<T>* DoubleLink<T>::insert(int index, T value)
 {
 	if (index == 0)
 		return insert_front(value);
 
-	Node<T>* pNode = getNode(index);
-	if (pNode == nullptr)
+	Node<T>* node = getNode(index);
+	if (node == nullptr)
 		return nullptr;
-	Node<T>* newNode = new Node<T>(value, pNode->pre_ptr, pNode);
-	pNode->pre_ptr->next_ptr = newNode;
-	pNode->pre_ptr = newNode;
+	Node<T>* newNode = new Node<T>(value, node->prev, node);
+	node->prev->next = newNode;
+	node->prev = newNode;//顺序不可换，理由同上
 	count++;
 
 	return newNode;
 };
-/*
-*删除链表第一个节点
-*返回删除后链表第一个节点
-*/
+
+/*删除链表第一个节点并返回删除后链表第一个节点*/
 template<typename T>
 Node<T>* DoubleLink<T>::delete_front()
 {
@@ -162,17 +151,15 @@ Node<T>* DoubleLink<T>::delete_front()
 	{
 		return nullptr;
 	}
-	Node<T>* pnode = phead->next_ptr;
-	phead->next_ptr = pnode->next_ptr;
-	pnode->next_ptr->pre_ptr = phead;
-	delete pnode;
+	Node<T>* node = head->next;
+	head->next = node->next;
+	node->next->prev = head;
+	delete node;//释放指针pnode指向的内存
 	count--;
-	return phead->next_ptr;
+	return head->next;
 };
-/*
-*删除链表的末尾节点
-*返回删除后链表尾部元素
-*/
+
+/*删除链表的末尾节点并返回删除后链表尾部元素*/
 template<typename T>
 Node<T>* DoubleLink<T>::delete_last()
 {
@@ -180,17 +167,15 @@ Node<T>* DoubleLink<T>::delete_last()
 	{
 		return nullptr;
 	}
-	Node<T>*pnode = phead->pre_ptr;
-	pnode->pre_ptr->next_ptr = phead;
-	phead->pre_ptr = pnode->pre_ptr;
-	delete pnode;
+	Node<T>*node = head->prev;
+	node->prev->next = head;
+	head->prev = node->prev;
+	delete node;
 	count--;
-	return phead->pre_ptr;
+	return head->prev;
 }
-/*
-*删除指定位置的元素
-*
-*/
+
+/*删除指定位置的元素*/
 template <typename T>
 Node<T>* DoubleLink<T>::del(int index)
 {
@@ -200,44 +185,42 @@ Node<T>* DoubleLink<T>::del(int index)
 		return delete_last();
 	if (index >= count)
 		return nullptr;
-	Node<T>* pnode = getNode(index);
-	pnode->pre_ptr->next_ptr = pnode->next_ptr;
-	pnode->next_ptr->pre_ptr = pnode->pre_ptr;
+	Node<T>* node = getNode(index);
+	node->prev->next = node->next;
+	node->next->prev = node->prev;
 
-	Node<T>* ptemp = pnode->pre_ptr;
-	delete pnode;
+	Node<T>* temp = node->prev;
+	delete node;
 	count--;
-	return ptemp;
+	return temp;
 };
 
+/*判断链表是否为空*/
 template <typename T>
 bool DoubleLink<T>::isEmpty()
 {
 	return count == 0;
 };
-/*
-*获取第一个节点的值
-*/
+
+/*获取第一个节点的值*/
 template<typename T>
 T DoubleLink<T>::get_front()
 {
-	return phead->next_ptr->_value;
+	return head->next->value;
 };
-/*
-*获取最后一个节点的值
-*/
+
+/*获取最后一个节点的值*/
 template <typename T>
 T DoubleLink<T>::get_last()
 {
-	return phead->pre_ptr->_value;
+	return head->prev->value;
 };
-/*
-*获取指定位置节点的值
-*/
+
+/*获取指定位置节点的值*/
 template <typename T>
 T DoubleLink<T>::get(int index)
 {
-	Node<T>  pnode = getNode(index);
-	return pnode->_value;
+	Node<T>  node = getNode(index);
+	return node->value;
 };
 # endif
