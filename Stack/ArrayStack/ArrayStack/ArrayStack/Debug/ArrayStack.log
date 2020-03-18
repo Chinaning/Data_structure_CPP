@@ -1,0 +1,5 @@
+﻿  ArrayStack_test.cpp
+c:\github\data_structure_c\stack\arraystack\arraystack\arraystack\arraystack.h(91): warning C4715: “ArrayStack<int>::top”: 不是所有的控件路径都返回值
+c:\github\data_structure_c\stack\arraystack\arraystack\arraystack\arraystack.h(81): warning C4715: “ArrayStack<int>::pop”: 不是所有的控件路径都返回值
+  ArrayStack.vcxproj -> C:\Github\Data_structure_C\Stack\ArrayStack\ArrayStack\Debug\ArrayStack.exe
+  ArrayStack.vcxproj -> C:\Github\Data_structure_C\Stack\ArrayStack\ArrayStack\Debug\ArrayStack.pdb (Full PDB)
