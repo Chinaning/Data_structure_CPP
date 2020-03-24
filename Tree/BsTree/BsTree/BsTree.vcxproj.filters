@@ -15,7 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BsTree.cpp">
+    <ClInclude Include="BsTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BsTree_test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,31 +1,56 @@
-#ifndef _BITREE_H_
-#define _BITREE_H_
+#ifndef BITREE_H
+#define BITREE_H
 
 using namespace std;
 
-/*结点定义*/
+/*************************  结点定义  ***********************************/
+
 template <typename T>   /*template为函数模板，将参数类型作为函数参数，可以定义一类函数族*/
 class BiTreeNode {
 public:
 	T data;
 	BiTreeNode<T>* left; /*左孩子指针*/
 	BiTreeNode<T>* right;/*右孩子指针*/
-	BiTreeNode(T data) {
-		this->data = data;
-		this->left = NULL;
-		this->right = NULL;
+
+public:
+	BiTreeNode() {//默认无参构造函数
+		left = nullptr;
+		right = nullptr;
 	}
+	
+	
+	/*
+
+	//含参构造函数方法一
+	BiTreeNode(T data) {
+	this->data = data;
+    this->left = NULL;
+    this->right = NULL;
+	}
+
+	*/
+
+	//含参构造函数方法二
+	BiTreeNode(T _data) :data(_data), left(nullptr), right(nullptr) {};
 };
-/*接口定义*/
+
+
+
+
+
+
+/*********************   二叉树接口定义    **********************/
+
 template <typename T>
 class BiTree {
 private:
 	int size;  /*树中结点的个数*/
 public:
 	BiTreeNode<T>* root;/*根结点的指针*/
-
-	BiTree() { size = 0; root = NULL; };
-	~BiTree() { remove(root); };   /*析构函数~，释放空间，还原变量*/
+	
+	BiTree() ;//默认无参构造函数
+	~BiTree();   /*析构函数~，释放空间，还原变量*/
+	
 
 	bool insert_left(BiTreeNode<T>* node, T data); /*将data插入到node的左孩子*/
 	bool insert_right(BiTreeNode<T>* node, T data); /*将data插入到node的右孩子*/
@@ -40,6 +65,27 @@ public:
 	int height(BiTreeNode<T>* node);/*以node为根的树的高度*/
 };
 
+
+/***************  构造函数  ***************************/
+template<typename T>
+BiTree<T>::BiTree() { 
+	size = 0; root = nullptr; 
+};//默认无参构造函数（生成空的二叉树，即结点个数0，根节点为空）
+
+
+
+
+/***************  析构函数  *******************************/
+template<typename T>
+BiTree<T>::~BiTree() { 
+	remove(root); 
+};   /*析构函数~，释放空间，还原变量*/
+
+	 
+
+
+	 
+	 
 /**************************************************************************
 Function:insert_left
 Description:将data插入到node的左孩子
@@ -63,6 +109,9 @@ bool BiTree<T>::insert_left(BiTreeNode<T>* node, T data) {
 	size++;//二叉树上节点的数量+1
 	return true;
 }
+
+
+
 /**************************************************************************
 Function:insert_right
 Description:将data插入到node的右孩子
@@ -87,6 +136,11 @@ bool BiTree<T>::insert_right(BiTreeNode<T>* node, T data) {
 	return true;
 }
 
+
+
+
+
+
 /**************************************************************************
 Function:remove（类似于析构类的功能）
 Description:删除以node为根的子树（包括node）
@@ -108,6 +162,11 @@ bool BiTree<T>::remove(BiTreeNode<T>* &node) {
 	else
 		return false;
 }
+
+
+
+
+
 
 /**************************************************************************
 Function:preorderR、preorderI
@@ -152,6 +211,11 @@ bool BiTree<T>::preorderI(BiTreeNode<T>* node, list<T>* l) {
 	return true;
 }
 
+
+
+
+
+
 /**************************************************************************
 Function:inorderR、inorderI
 Description:中序遍历以node为根的数，并将遍历结果保存到l中
@@ -191,6 +255,11 @@ bool BiTree<T>::inorderI(BiTreeNode<T>* node, list<T>* l) {
 	}
 	return true;
 }
+
+
+
+
+
 
 /**************************************************************************
 Function:postorderR、postorderI
@@ -239,6 +308,11 @@ bool BiTree<T>::postorderI(BiTreeNode<T>* node, list<T>* l) {
 	return true;
 }
 
+
+
+
+
+
 /**************************************************************************
 Function:level
 Description:层次遍历以node为根的树，并将变量结果保存到l中
@@ -261,6 +335,11 @@ bool BiTree<T>::level(BiTreeNode<T>* node, list<T>* l) {
 	}
 	return true;
 }
+
+
+
+
+
 
 /**************************************************************************
 Function:height

@@ -12,10 +12,9 @@ public:
 	T value;//值
 	Node<T>*next;//指针
 public:
-	Node() = default;
+	Node() { next = nullptr; };
 	Node(T _value, Node<T>*_next) :value(_value), next(_next) {}
 };
-
 
 
 
@@ -50,9 +49,7 @@ public:
 
 template<typename T>
 SingleLink<T>::SingleLink() {
-	head = new Node<T>(0, nullptr);
-	/*head->value = 0;
-	head->next = nullptr;*/
+	head = new Node<T>;//调用Node类的默认无参构造函数，只给指针赋值nullptr
 	count = 0;
 }
 

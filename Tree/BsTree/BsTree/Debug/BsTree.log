@@ -1,3 +1,211 @@
-﻿  BsTree.cpp
-  BsTree.vcxproj -> C:\Github\Data_structure_C\Tree\BsTree\Debug\BsTree.exe
-  BsTree.vcxproj -> C:\Github\Data_structure_C\Tree\BsTree\Debug\BsTree.pdb (Full PDB)
+﻿  BsTree_test.cpp
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(68): error C2061: 语法错误: 标识符“queue”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(100): note: 参见对正在编译的类 模板 实例化“BSTree<K,V>”的引用
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(97): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(97): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(97): error C2238: 意外的标记位于“;”之前
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(99): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(99): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(99): error C2238: 意外的标记位于“;”之前
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(291): error C2061: 语法错误: 标识符“queue”
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2988: 不可识别的模板声明/定义
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2059: 语法错误:“<”
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2065: “K”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2065: “V”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2923: “BSTree”: 对于参数“K”，“K”不是有效的 模板 类型变量
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(301): error C2923: “BSTree”: 对于参数“V”，“V”不是有效的 模板 类型变量
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2065: “K”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2065: “V”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2923: “BSTree”: 对于参数“K”，“K”不是有效的 模板 类型变量
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2923: “BSTree”: 对于参数“V”，“V”不是有效的 模板 类型变量
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree.h(308): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(10): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(11): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(12): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(13): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(14): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(15): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(16): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(16): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(16): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(17): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(17): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(17): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(18): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(18): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(18): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(19): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(19): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(19): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(20): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(20): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(20): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(21): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(21): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(21): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(22): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(23): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(24): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(24): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(25): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(26): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(26): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(27): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(32): error C2065: “tree”: 未声明的标识符
+c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(33): error C2679: 二进制“<<”: 没有找到接受“overloaded-function”类型的右操作数的运算符(或没有可接受的转换)
+  d:\vs2015\vc\include\ostream(495): note: 可能是“std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)”
+  d:\vs2015\vc\include\ostream(475): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)”
+  d:\vs2015\vc\include\ostream(455): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)”
+  d:\vs2015\vc\include\ostream(435): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)”
+  d:\vs2015\vc\include\ostream(415): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)”
+  d:\vs2015\vc\include\ostream(395): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)”
+  d:\vs2015\vc\include\ostream(375): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)”
+  d:\vs2015\vc\include\ostream(355): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)”
+  d:\vs2015\vc\include\ostream(335): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)”
+  d:\vs2015\vc\include\ostream(315): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)”
+  d:\vs2015\vc\include\ostream(290): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)”
+  d:\vs2015\vc\include\ostream(270): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)”
+  d:\vs2015\vc\include\ostream(236): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)”
+  d:\vs2015\vc\include\ostream(216): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)”
+  d:\vs2015\vc\include\ostream(209): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))”
+  d:\vs2015\vc\include\ostream(202): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))”
+  d:\vs2015\vc\include\ostream(196): note: 或  “std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))”
+  c:\github\data_structure_cpp\tree\bstree\bstree\bstree_test.cpp(33): note: 尝试匹配参数列表“(std::ostream, overloaded-function)”时

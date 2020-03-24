@@ -8,7 +8,10 @@ template <typename T>
 class Node
 {
 public://函数
-	Node() = default;
+	Node() {//默认无参构造函数
+		prev = nullptr;
+		next = nullptr;
+	};
 	Node(T _data, Node<T>*_prev, Node<T>* _next)//含参构造函数初始化对象
 		:value(_data), prev(_prev), next(_next) { }
 public://数据
@@ -57,8 +60,8 @@ private:
 template <typename T>
 DoubleLink<T>::DoubleLink()
 {
-	head = new Node<T>(0, nullptr, nullptr);//为头结点申请内存空间
-	tail = new Node<T>(0, nullptr, nullptr);//为尾结点申请内存空间
+	head = new Node<T>;//为头结点申请内存空间
+	tail = new Node<T>;//为尾结点申请内存空间
 	//空的双向链表需要头结点和尾结点的四个指针关系
 	head->next = tail;//头结点后继是尾结点
 	head->prev = nullptr;//头结点的前驱指针为空

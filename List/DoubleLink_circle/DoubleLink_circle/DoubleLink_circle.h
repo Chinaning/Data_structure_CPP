@@ -8,9 +8,12 @@ template <typename T>
 class Node
 {
 public:
-	Node() = default;//如果定义含参构造函数则系统不会为对象生成默认构造函数。如果后面可能需要用到对象的默认构造函数，则需要将默认构造函数default来声明一下。
+	Node() {//默认无参构造函数
+		prev = nullptr;
+		next = nullptr;
+	}
 	Node(T _value, Node<T>* _prev, Node<T>* _next)
-		:value(_value), prev(_prev), next(_next) {}//通过含参构造函进行初始化对象
+		:value(_value), prev(_prev), next(_next) {}//含参构造函进行初始化对象
 
 public:
 	T value;//数据域
@@ -55,7 +58,7 @@ private:
 template <typename T>
 DoubleLink<T>::DoubleLink()
 {
-	head = new Node<T>(0, nullptr, nullptr);//为头结点phead开辟内存空间并给对象数据成员直接赋初始值（实际通过含参构造函数给对象的数据成员进行赋值）
+	head = new Node<T>;//调用Node的默认无参构造函数为头结点head开辟内存空间
 	head->next = head;//空表头结点前驱和后继均是自己
 	head->prev = head;
 	count = 0;//结点数为零
